@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naomi Soni Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      transition: background 0.5s ease;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #000, #111, #222);
+      border-bottom: 2px solid #00aaff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h2 {
+      color: #ffcc00;
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #aad4ff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #ffcc00;
+    }
+
+    p {
+      color: #aad4ff;
+      line-height: 1.6;
+    }
+
+    /* HOME */
+    #home {
+      background: linear-gradient(135deg, #000, #001f3f, #111);
+    }
+
+    #home img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #ffcc00;
+      margin-bottom: 20px;
+    }
+
+    /* SMALL BUTTON */
+    button {
+      background-color: #00aaff;
+      color: #fff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 8px rgba(0,170,255,0.3);
+    }
+
+    button:hover {
+      background-color: #007acc;
+      transform: scale(1.05);
+    }
+
+    /* PROJECTS */
+    .project {
+      background: rgba(255, 255, 0, 0.1);
+      border-left: 4px solid #ffcc00;
+      padding: 15px 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 700px;
+      text-align: left;
+    }
+
+    .project h3 {
+      color: #00aaff;
+    }
+
+    /* ABOUT */
+    #about {
+      background-color: #ffffff; /* White background */
+      color: #000;
+      border-top: 2px solid #ffcc00;
+      border-bottom: 2px solid #00aaff;
+      padding: 70px 20px;
+    }
+
+    #about h2 {
+      color: #0b67ff; /* Blue heading */
+    }
+
+    #about p {
+      max-width: 700px;
+      margin: 20px auto;
+      color: #333;
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial {
+      background: #009933;
+      color: white;
+      border-left: 5px solid #00ff7f;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 700px;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(0, 255, 100, 0.3);
+    }
+
+    .testimonial strong {
+      display: block;
+      color: #fff;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* CONTACT FORM */
+    #contact {
+      background: linear-gradient(135deg, #228B22, #0b67ff);
+      color: white;
+      padding: 70px 20px;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 40px;
+      border-radius: 20px;
+      width: 500px;
+      margin: 30px auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1em;
+    }
+
+    textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    form button {
+      background: linear-gradient(90deg, #0b67ff, #228B22);
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: linear-gradient(90deg, #228B22, #0b67ff);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #aad4ff;
+      font-size: 0.9em;
+      border-top: 2px solid #00aaff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Naomi Soni</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <img src="naomi.jpg.jpg" alt="Naomi Soni Photo" height="70" width="60">
+    <h1>Hi, I'm <span style="color:#00aaff;">Naomi Soni</span></h1>
+    <p>I am an IT professional, web developer, and programmer passionate about creating beautiful, functional digital experiences.</p>
+    <button onclick="document.querySelector('#projects').scrollIntoView({behavior: 'smooth'})">See My Projects</button>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>🏫 School Website</h3>
+      <p>This website helps schools manage student data   for academic programs, events, announcements, and resources, making it simple to stay informed and connected with the school community. It is designed to be user-friendly and visually appealing, ensuring everyone can navigate it with ease..</p>
+    </div>
+
+    <div class="project">
+      <h3>🏢 Business Website</h3>
+      <p>A professional, responsive website designed to showcase products and services, making it easy for customers to learn about the company and make purchases or inquiries. The site includes sections for product details, pricing, contact information, and customer support, designed to be professional, user-friendly, and visually engaging..</p>
+    </div>
+
+    <div class="project">
+      <h3>🔐 Security & Networking</h3>
+      <p>Developed IT security and networking solutions with firewall setup, VPN access, and secure backups for safe communication and also the site includes resources on cybersecurity best practices, threat prevention, and secure tools, providing clear guidance in a user-friendly and professional format to help individuals and businesses stay safe online.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am deeply passionate about the world of Information and Communication Technology. I love solving real-world problems using technology and bringing ideas to life through web design and programming.</p>
+    <p>My goal is to build digital solutions that are powerful, user-friendly, and visually stunning. Every project I create is driven by innovation, creativity, and a desire to make technology accessible to everyone.</p>
+    <p><strong>Name:</strong> Naomi Muthoni</p>
+    <p><strong>Phone:</strong> +254745324146</p>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+
+    <div class="testimonial">
+      “Naomi redesigned our entire business website — and the result was amazing!  
+      Her creativity, professionalism, and attention to detail are outstanding.”
+      <strong>- Sarah W., Business Owner</strong>
+    </div>
+
+    <div class="testimonial">
+      “Naomi is one of the most talented IT professionals I’ve ever collaborated with.  
+      She’s skilled, passionate, and delivers perfection every time.”
+      <strong>- James M., Software Engineer</strong>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2>My Portfolio</h2>
+    <p>Here I’ll upload my successful projects soon — including my school system, business website, and IT security solutions.</p>
+    <img src="school.jpg.jpg" alt="school project">
+    <P>business website</P>
+    <img src="business.jpj.jpg" alt="business project">
+    <P>security website</P>
+    <img src="security.jpg.jpg" alt="security project">
+    <p style="color:#ffcc00;">Stay tuned for real demos and live links!</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to collaborate, feel free to reach out using the form below:</p>
+    <form action="https://formspree.io/f/mjkawlvg" method="POST" onsubmit="alert('Message sent successfully!')">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" placeholder="Type your message here..." required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Naomi Soni — IT Professional & Web Developer
+  </footer>
+
+</body>
+</html>
